@@ -11,5 +11,5 @@ spec:
   - demo.sermetziadis.com
   rules:
   - backendRefs:
-    - name: hello-http-svc
+    - name: hello-http
       port: 80
