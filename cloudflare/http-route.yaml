@@ -8,8 +8,8 @@ spec:
   - name: gateway
     namespace: cloudflare-gateway
   hostnames:
-  - example.com
+  - demo.sermetziadis.com
   rules:
   - backendRefs:
-    - name: hello-http
+    - name: hello-http-svc
       port: 80

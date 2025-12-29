@@ -1,5 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
+name: hello-http-dp
 meta:
   name: hello-http
   labels:
