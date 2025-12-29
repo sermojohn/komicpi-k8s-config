@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-name: hello-http-dp
-meta:
+metadata:
   name: hello-http
   labels:
     app: hello-http
@@ -11,7 +10,7 @@ spec:
     matchLabels:
       app: hello-http
   template:
-    meta:
+    metadata:
       labels:
         app: hello-http
     spec:
