@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cloudflared-config
+  namespace: cloudflared
+data:
+  config.yaml: |
+    tunnel: bdbac2ff-6ac8-4ffb-9605-3dd45129789a
+    credentials-file: /etc/cloudflared/credentials.json
+
+    ingress:
+      - hostname: demo.sermetziadis.com
+        service: http://hello-http.default.svc.cluster.local:80
+      - service: http_status:404
